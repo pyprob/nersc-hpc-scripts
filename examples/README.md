@@ -31,3 +31,13 @@ argument.
 
 ## [pyprob_mining_perlmutter_job.sh](./pyprob_mining_perlmutter_job.sh)
 
+This script contains the requested resources in the "header". It also set
+environment variables needed downstream. This script calls `srun` (a nested job
+using all allocated resources) which executes
+[shifter_pyrpob_mining.sh](./shifter_pyprob_mining.sh).
+
+## [shifter_pyrpob_mining.sh](./shifter_pyprob_mining.sh)
+
+This is the final script which runs the program within the shifter image. The
+script also creates two directories used for storing results and figures. Those
+directories are then mounted inside the image.
