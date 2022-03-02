@@ -6,16 +6,13 @@ meant for perlmutter (and GPU access), simply removing any GPU related settings
 will also make these secripts usable with NERSC's
 [cori](https://www.nersc.gov/systems/cori/).
 
-As per NERSC's [documentation](https://docs.nersc.gov/development/shifter/),
+As per NERSC's [documentation](https://docs.nersc.gov/development/shifter/)
 these scripts make use of `shifter` which converts `Docker` images to a common
-format which can be efficiently distributed.
-
-The docker images used in this example is build using the Dockerfile found in
-the Git repository
+format which can be efficiently distributed. The docker images used in this
+example is build using the Dockerfile found in the Git repository
 [mining-for-substructure-lens](https://github.com/pyprob/mining-for-substructure-lens/tree/pyprob_implementation).
-
 A public docker container is available from
-[DockerHub](https://hub.docker.com/r/mumunk/pyprob-mining), and can be directly
+[DockerHub](https://hub.docker.com/r/mumunk/pyprob-mining) and can be directly
 pulled by running
 
 ``` sh
