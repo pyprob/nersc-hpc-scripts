@@ -23,7 +23,7 @@ on NERSC's hpc.
 
 ## [job_submitter.sh](./job_submitter.sh) 
 
-This scipt serves as the entrypoint for submitting jobs. It creates a directory
+This script serves as the entrypoint for submitting jobs. It creates a directory
 located in `$SCRATCH` where one can find the job's `.out` files. It then submits
 a job by calling `sbatch` with
 [pyprob_mining_perlmutter_job.sh](./pyprob_mining_perlmutter_job.sh) as
